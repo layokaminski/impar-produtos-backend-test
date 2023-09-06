@@ -2,12 +2,12 @@
 
 ## O problema
 Você está construindo um sistema web que irá realizar o disparo de mensagens (SMS, Email, Whatsapp...) para um grande número de usuários. Você irá reparar que a solução inicial já faz o envio da mensagem para todos os usuários cadastrados no banco de dados, porém, como todo o código está sendo executado diretamente no controller da API, a solução está suscetível a timeouts.
-Importante: Não vale aumentar o tempo de timeout 😉
+- Importante: Não vale aumentar o tempo de timeout 😉
 
 ## O que você irá precisar
-Visual Studio Community 2022
-Azure Data Studio ou SSMS
-SQL Server local
+* Visual Studio Community 2022
+* Azure Data Studio ou SSMS
+* SQL Server local
 
 ## Como começar
 Primeiramente, você precisa ter o banco de dados rodando localmente, para isso, disponibilizamos um arquivo backpack (impar-evaluation-db.bacpac) que já contém a estrutura básica do banco e a tabela de usuários já preenchida com 30 mil usuários de exemplo.
