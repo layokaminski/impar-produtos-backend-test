@@ -1,4 +1,4 @@
-﻿namespace Impar.BackEnd.Evaluation
+﻿namespace Impar.BackEnd.Evaluation.Entities
 {
     public class User
     {

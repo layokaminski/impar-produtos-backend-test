@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Impar.BackEnd.Evaluation.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Impar.BackEnd.Evaluation
+namespace Impar.BackEnd.Evaluation.Contexts
 {
     public class MessagesDbContext : DbContext
     {

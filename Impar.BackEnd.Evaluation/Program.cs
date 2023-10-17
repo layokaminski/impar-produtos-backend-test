@@ -1,4 +1,5 @@
-using Impar.BackEnd.Evaluation;
+using Impar.BackEnd.Evaluation.Contexts;
+using Impar.BackEnd.Evaluation.Services;
 using Microsoft.EntityFrameworkCore;
 
 internal class Program
@@ -10,7 +11,8 @@ internal class Program
         // Add services to the container.
 
         builder.Services.AddControllers();
-
+        builder.Services.AddLogging();
+        builder.Services.AddScoped<IMessagesService, MessagesService>();
         builder.Services.AddDbContext<MessagesDbContext>(options => options.UseSqlServer("Server=localhost;Database=impar-evaluation-db;User=sa;Password=123@mudar;TrustServerCertificate=True"));
 
         var app = builder.Build();
